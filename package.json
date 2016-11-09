@@ -2,6 +2,9 @@
   "name": "luky-beer",
   "version": "1.1.1",
   "description": "luky-beer: An Ionic project",
+  "scripts": {
+    "api": "json-server db.json --port 30303"
+  },
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
@@ -12,6 +15,7 @@
   "devDependencies": {
     "bower": "^1.3.3",
     "gulp-util": "^2.2.14",
+    "json-server": "^0.8.23",
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
