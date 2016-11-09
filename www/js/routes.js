@@ -19,7 +19,7 @@ angular.module('app.routes', [])
         views: {
             'side-menu21': {
                 templateUrl: 'templates/page1.html',
-                controller: 'page1Ctrl'
+                controller: 'luckCtrl'
             }
         }
     })
@@ -29,7 +29,7 @@ angular.module('app.routes', [])
         views: {
             'side-menu21': {
                 templateUrl: 'templates/page2.html',
-                controller: 'page2Ctrl'
+                controller: 'listCtrl'
             }
         }
     })
