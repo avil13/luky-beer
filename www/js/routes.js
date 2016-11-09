@@ -10,31 +10,44 @@ angular.module('app.routes', [])
 
         .state('menu', {
         url: '/side-menu21',
-        templateUrl: 'templates/menu.html',
+        templateUrl: 'js/controllers/menu/menu.html',
         controller: 'menuCtrl'
     })
 
-    .state('menu.page1', {
-        url: '/page1',
+
+
+    .state('menu.index', {
+        url: '/index',
         views: {
             'side-menu21': {
-                templateUrl: 'templates/page1.html',
+                templateUrl: 'js/controllers/index/index.html',
+                controller: 'indexCtrl'
+            }
+        }
+    })
+
+    .state('menu.luck', {
+        url: '/luck',
+        views: {
+            'side-menu21': {
+                templateUrl: 'js/controllers/luck/luck.html',
                 controller: 'luckCtrl'
             }
         }
     })
 
-    .state('menu.page2', {
+    .state('menu.list', {
         url: '/menu',
         views: {
             'side-menu21': {
-                templateUrl: 'templates/page2.html',
+                templateUrl: 'js/controllers/list/list.html',
                 controller: 'listCtrl'
             }
         }
     })
 
-    $urlRouterProvider.otherwise('/side-menu21/page1')
+
+    $urlRouterProvider.otherwise('/side-menu21/index')
 
 
 

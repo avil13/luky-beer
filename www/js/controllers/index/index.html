@@ -1,0 +1,11 @@
+<ion-view title="Выбор заведения" id="page3">
+	<ion-content padding="true" class="has-header">
+		<form id="page3-form10" class="list">
+			<label class="item item-select" id="page3-select3" name="barName">
+        <span class="input-label">Название</span>
+        <select ng-model="Bars.bar" ng-options="bar.name for bar in Bars.list track by bar.id"></select>
+      </label>
+		</form>
+		<button ng-click="goToBar()" id="page3-button8" style="font-weight:600;" class="button button-positive button-large button-block icon-right ion-android-exit">Перейти к заказу</button>
+	</ion-content>
+</ion-view>

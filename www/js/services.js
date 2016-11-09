@@ -1,9 +1,15 @@
 angular.module('app.services', [])
 
-.factory('BlankFactory', [function(){
-
+.factory('API', ['$http', function($http) {
+    var url = 'http://localhost:30303';
+    
+    return {
+        getBars: function(){
+            return $http.get(url + '/bars')
+        }
+    };
 }])
 
-.service('BlankService', [function(){
+// .service('BlankService', [function(){
 
-}]);
+// }]);
