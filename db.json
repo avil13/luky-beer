@@ -1,0 +1,25 @@
+{
+    "bars": [{
+        "id": 1,
+        "name": "Папа Вейдер",
+        "address": "Китай-Город"
+
+    }, {
+        "id": 2,
+        "name": "Bolivar",
+        "address": "Авиамоторная"
+    }],
+
+    "order": [{
+        "name": "Guiness",
+        "price": 26000,
+        "alcohol": 8,
+        "is_eat": false
+    }, {
+        "name": "Pizza",
+        "price": 46000,
+        "alcohol": 0,
+        "is_eat": true
+    }]
+
+}
