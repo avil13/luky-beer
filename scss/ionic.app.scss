@@ -55,3 +55,10 @@ ion-list.manual-list-fullwidth div.list>.item,
     list-style-type: decimal;
     padding-left: 40px;
 }
+
+// 
+.active {
+    border-color: transparent;
+    background-color: #387ef5;
+    color: #fff;
+}

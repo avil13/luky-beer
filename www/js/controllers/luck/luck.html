@@ -3,27 +3,19 @@
     <form id="page1-form9" class="list">
       <label class="item item-select" id="page1-select1" name="countPeople">
         <span class="input-label">Кол-во чел.</span>
-        <select>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-        </select>
+        <select ng-model="option.count" ng-options="o as o for o  in [1,2,3,4,5,6,7,8]"></select>
       </label>
     </form>
+    {{ X }}
     <div id="page1-button-bar1" class="button-bar">
-      <button id="page1-button2" class="button button-positive  button-block">Дешево</button>
-      <button id="page1-button3" class="button button-positive  button-block button-outline">Средне</button>
-      <button id="page1-button4" class="button button-positive  button-block button-outline">Дорого</button>
+      <button id="page1-button2" class="button button-positive  button-block button-outline" ng-click="option.price_zone=0" is-active="option.price_zone==0">Дешево</button>
+      <button id="page1-button3" class="button button-positive  button-block button-outline" ng-click="option.price_zone=1" is-active="option.price_zone==1">Средне</button>
+      <button id="page1-button4" class="button button-positive  button-block button-outline" ng-click="option.price_zone=2" is-active="option.price_zone==2">Дорого</button>
     </div>
     <div id="page1-button-bar2" class="button-bar">
-      <button id="page1-button5" class="button button-positive  button-block button-outline">Без Алко</button>
-      <button id="page1-button6" class="button button-positive  button-block button-outline">Легкие</button>
-      <button id="page1-button7" class="button button-positive  button-block button-outline">Хардкор</button>
+      <button id="page1-button5" class="button button-positive  button-block button-outline" ng-click="option.alco_zone=0" is-active="option.alco_zone==0">Без Алко</button>
+      <button id="page1-button6" class="button button-positive  button-block button-outline" ng-click="option.alco_zone=1" is-active="option.alco_zone==1">Легкие</button>
+      <button id="page1-button7" class="button button-positive  button-block button-outline" ng-click="option.alco_zone=2" is-active="option.alco_zone==2">Крепкие</button>
     </div>
     <form id="page1-form6" class="list">
       <ion-toggle toggle-class="toggle-positive" id="page1-toggle3">Закуски</ion-toggle>
