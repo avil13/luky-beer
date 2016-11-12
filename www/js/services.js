@@ -21,7 +21,7 @@ angular.module('app.services', [])
                 params: params
             };
 
-            return $http.get(url + '/bars', options)
+            return $http.get(url + '/order', options)
         }
     };
 }])

@@ -10,16 +10,21 @@
         "address": "Авиамоторная"
     }],
 
-    "order": [{
-        "name": "Guiness",
-        "price": 26000,
-        "alcohol": 8,
-        "is_eat": false
-    }, {
-        "name": "Pizza",
-        "price": 46000,
-        "alcohol": 0,
-        "is_eat": true
-    }]
+    "order": {
+        "beer": [{
+            "name": "Guiness",
+            "price": 26000,
+            "alcohol": 8,
+            "is_eat": false
+        }],
+        "eat": [{
+            "name": "Pizza",
+            "price": 46000,
+            "alcohol": 0,
+            "is_eat": true
+        }]
+    }
+
+
 
 }

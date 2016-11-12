@@ -9,13 +9,17 @@ angular.module('app.controllers.luck', [])
             snaks: false
         };
 
-        $scope.list = [];
+        $scope.listBeer = [];
+        $scope.listEat = [];
 
 
         $scope.get = function(){
             API.getOrder($scope.option)
             .then(function(res){
-                //
+                console.log(res.data);
+                // debugger;
+                $scope.listBeer = res.data.beer;
+                $scope.listEat = res.data.eat; 
             })
         };
     }
